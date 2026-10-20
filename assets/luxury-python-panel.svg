@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 195" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pyGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1017"/>
+      <stop offset="100%" stop-color="#07090e"/>
+    </linearGradient>
+
+    <linearGradient id="pySpec" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+
+    <linearGradient id="pyBarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <radialGradient id="pyAmbient" cx="12%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#07090e" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="pySoftGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .ui-sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif; }
+    .ui-mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
+
+    .ring-spin {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: slowSpin 16s linear infinite;
+    }
+    .cursor-fade {
+      animation: blinkCursor 1.1s step-end infinite;
+    }
+    .prog-pulse {
+      animation: barPulse 2.6s ease-in-out infinite alternate;
+    }
+
+    @keyframes slowSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes blinkCursor {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    @keyframes barPulse {
+      from { width: 170px; }
+      to { width: 210px; }
+    }
+  </style>
+
+  <g transform="translate(4, 4)">
+    <rect width="992" height="186" rx="16" fill="url(#pyGlass)" stroke="url(#pySpec)" stroke-width="1.2"/>
+    <rect width="992" height="186" rx="16" fill="url(#pyAmbient)"/>
+
+    <!-- 1. IZQUIERDA: NÚCLEO PYTHON (100% FOCUS) -->
+    <g transform="translate(95, 93)">
+      <circle cx="0" cy="0" r="56" fill="#090c14" stroke="#1e293b" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="56" fill="none" stroke="url(#pyBarGrad)" stroke-width="2" stroke-dasharray="48 24" class="ring-spin" filter="url(#pySoftGlow)"/>
+      <circle cx="0" cy="0" r="44" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+
+      <!-- Ícono Vectorial Python Limpio -->
+      <g transform="translate(-19, -20) scale(0.88)">
+        <path d="M 21 2 C 11 2 12 6 12 6 L 12 11 L 22 11 L 22 13 L 8 13 C 8 13 2 12 2 22 C 2 32 7 31 7 31 L 10 31 L 10 26 C 10 26 10 20 16 20 L 26 20 C 26 20 31 20 31 15 L 31 7 C 31 7 32 2 21 2 Z" fill="#38bdf8"/>
+        <circle cx="16" cy="6.5" r="1.8" fill="#090c14"/>
+        <path d="M 22 42 C 32 42 31 38 31 38 L 31 33 L 21 33 L 21 31 L 35 31 C 35 31 41 32 41 22 C 41 12 36 13 36 13 L 33 13 L 33 18 C 33 18 33 24 27 24 L 17 24 C 17 24 12 24 12 29 L 12 37 C 12 37 11 42 22 42 Z" fill="#818cf8"/>
+        <circle cx="27" cy="37.5" r="1.8" fill="#090c14"/>
+      </g>
+
+      <text x="0" y="74" text-anchor="middle" class="ui-mono" fill="#e2e8f0" font-size="10" font-weight="600" letter-spacing="1.5">
+        PYTHON // 100%
+      </text>
+    </g>
+
+    <!-- 2. CENTRO: VENTANA DE CÓDIGO ESTILO MACOS / LINEAR -->
+    <g transform="translate(185, 22)">
+      <rect width="435" height="142" rx="12" fill="#07090e" stroke="url(#pySpec)" stroke-width="1"/>
+      <rect width="435" height="26" rx="12" fill="#0e121b"/>
+      <circle cx="16" cy="13" r="4.5" fill="#334155"/>
+      <circle cx="30" cy="13" r="4.5" fill="#334155"/>
+      <circle cx="44" cy="13" r="4.5" fill="#334155"/>
+      <text x="217" y="17" text-anchor="middle" class="ui-mono" fill="#64748b" font-size="10">profile.py — Jordan Stewart</text>
+
+      <text x="20" y="50" class="ui-mono" fill="#c084fc" font-size="11.5">class <tspan fill="#38bdf8" font-weight="600">Developer</tspan><tspan fill="#94a3b8">:</tspan></text>
+      <text x="36" y="71" class="ui-mono" fill="#94a3b8" font-size="11">lenguaje = <tspan fill="#e2e8f0">"Python 3 (Único lenguaje actual)"</tspan></text>
+      <text x="36" y="92" class="ui-mono" fill="#94a3b8" font-size="11">objetivo = <tspan fill="#818cf8">"Ciencia de Datos &amp; IA"</tspan></text>
+      <text x="36" y="113" class="ui-mono" fill="#94a3b8" font-size="11">filosofia = <tspan fill="#38bdf8">"Aprender bien antes de abarcar mucho"</tspan></text>
+      <text x="20" y="132" class="ui-mono" fill="#64748b" font-size="10.5">&gt;&gt;&gt; <tspan fill="#cbd5e1">status: building_foundations()</tspan><tspan fill="#38bdf8" class="cursor-fade"> ▋</tspan></text>
+    </g>
+
+    <!-- 3. DERECHA: QUÉ ESTOY APRENDIENDO ACTUALMENTE -->
+    <g transform="translate(642, 22)">
+      <rect width="326" height="142" rx="12" fill="#090c14" stroke="url(#pySpec)" stroke-width="1"/>
+      <text x="20" y="25" class="ui-mono" fill="#64748b" font-size="10" font-weight="600" letter-spacing="1.2">
+        MI RUTA DE APRENDIZAJE
+      </text>
+
+      <!-- Etapa 1 -->
+      <text x="20" y="50" class="ui-sans" fill="#f1f5f9" font-size="12" font-weight="600">Fundamentos &amp; Lógica con Python</text>
+      <text x="255" y="50" class="ui-mono" fill="#38bdf8" font-size="9.5" font-weight="600">ACTIVO</text>
+      <rect x="20" y="57" width="286" height="5" rx="2.5" fill="#161b26"/>
+      <rect x="20" y="57" width="190" height="5" rx="2.5" fill="url(#pyBarGrad)" class="prog-pulse"/>
+
+      <!-- Etapa 2 -->
+      <text x="20" y="86" class="ui-sans" fill="#f1f5f9" font-size="12" font-weight="600">Analítica de Datos &amp; Automatización</text>
+      <text x="242" y="86" class="ui-mono" fill="#818cf8" font-size="9.5" font-weight="600">EN CURSO</text>
+      <rect x="20" y="93" width="286" height="5" rx="2.5" fill="#161b26"/>
+      <rect x="20" y="93" width="130" height="5" rx="2.5" fill="#818cf8"/>
+
+      <!-- Etapa 3 -->
+      <text x="20" y="122" class="ui-sans" fill="#94a3b8" font-size="12" font-weight="500">Modelos de Inteligencia Artificial</text>
+      <text x="225" y="122" class="ui-mono" fill="#c084fc" font-size="9.5" font-weight="600">PRÓXIMA META</text>
+      <rect x="20" y="129" width="286" height="5" rx="2.5" fill="#161b26"/>
+      <rect x="20" y="129" width="55" height="5" rx="2.5" fill="#c084fc"/>
+    </g>
+  </g>
+</svg>

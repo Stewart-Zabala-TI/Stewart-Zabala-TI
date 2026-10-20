@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 365" width="100%" height="100%">
+  <defs>
+    <linearGradient id="glassCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1017"/>
+      <stop offset="100%" stop-color="#07090e"/>
+    </linearGradient>
+
+    <linearGradient id="innerCard" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#131722" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0e111a" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <linearGradient id="borderSpec" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+
+    <linearGradient id="linearAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="areaGraph" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#6366f1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#07090e" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="cardGlow1" cx="15%" cy="15%" r="55%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#07090e" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="cardGlow2" cx="80%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#07090e" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="luxBloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .ui-sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif; }
+    .ui-mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
+
+    .synapse-flow {
+      stroke-dasharray: 5 6;
+      animation: flowAnim 1.6s linear infinite;
+    }
+    .node-breathe {
+      animation: breathe 2.2s ease-in-out infinite alternate;
+    }
+    .spline-draw {
+      stroke-dasharray: 420;
+      stroke-dashoffset: 420;
+      animation: drawSpline 4s ease-in-out infinite alternate;
+    }
+    .dot-float {
+      animation: floatDot 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes flowAnim {
+      from { stroke-dashoffset: 22; }
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes breathe {
+      from { opacity: 0.45; }
+      to { opacity: 1; }
+    }
+    @keyframes drawSpline {
+      0% { stroke-dashoffset: 220; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes floatDot {
+      from { transform: translateY(-2px); }
+      to { transform: translateY(2px); }
+    }
+  </style>
+
+  <!-- ========================================================= -->
+  <!-- TARJETA 1 (IZQUIERDA): SOBRE MÍ (ESTILO APPLE / LINEAR)   -->
+  <!-- ========================================================= -->
+  <g transform="translate(4, 4)">
+    <rect width="540" height="356" rx="16" fill="url(#glassCard)" stroke="url(#borderSpec)" stroke-width="1.2"/>
+    <rect width="540" height="356" rx="16" fill="url(#cardGlow1)"/>
+
+    <!-- Etiqueta Superior -->
+    <text x="28" y="34" class="ui-mono" fill="#64748b" font-size="10" font-weight="600" letter-spacing="1.5">
+      01 // SOBRE MÍ &amp; ENFOQUE
+    </text>
+    <circle cx="508" cy="30" r="4" fill="#38bdf8" filter="url(#luxBloom)"/>
+
+    <!-- Título -->
+    <text x="28" y="66" class="ui-sans" fill="#f8fafc" font-size="22" font-weight="700" letter-spacing="-0.3">
+      Ingeniería, Ciencia de Datos &amp; IA
+    </text>
+    <text x="28" y="92" class="ui-sans" fill="#94a3b8" font-size="13">
+      Soy <tspan fill="#e2e8f0" font-weight="600">Jordan Stewart Zabala Correa</tspan>. Apasionado por la tecnología,
+    </text>
+    <text x="28" y="111" class="ui-sans" fill="#94a3b8" font-size="13">
+      el análisis de datos y el aprendizaje continuo en el ecosistema de <tspan fill="#38bdf8" font-weight="600">Python</tspan>.
+    </text>
+
+    <!-- Pilares en Cristal Esmerilado -->
+    <!-- Pilar 1 -->
+    <g transform="translate(28, 134)">
+      <rect width="484" height="60" rx="12" fill="url(#innerCard)" stroke="url(#borderSpec)" stroke-width="1"/>
+      <rect x="14" y="14" width="32" height="32" rx="8" fill="#090c14" stroke="#38bdf8" stroke-opacity="0.4"/>
+      <text x="30" y="34" text-anchor="middle" class="ui-mono" fill="#38bdf8" font-size="11" font-weight="700">AI</text>
+      <text x="58" y="26" class="ui-sans" fill="#f1f5f9" font-size="13.5" font-weight="600">Ciencia de Datos e Inteligencia Artificial</text>
+      <text x="58" y="44" class="ui-sans" fill="#94a3b8" font-size="12">Explorando el poder de los datos, la analítica y los modelos inteligentes.</text>
+    </g>
+
+    <!-- Pilar 2 -->
+    <g transform="translate(28, 204)">
+      <rect width="484" height="60" rx="12" fill="url(#innerCard)" stroke="url(#borderSpec)" stroke-width="1"/>
+      <rect x="14" y="14" width="32" height="32" rx="8" fill="#090c14" stroke="#818cf8" stroke-opacity="0.4"/>
+      <text x="30" y="34" text-anchor="middle" class="ui-mono" fill="#818cf8" font-size="11" font-weight="700">PY</text>
+      <text x="58" y="26" class="ui-sans" fill="#f1f5f9" font-size="13.5" font-weight="600">Aprendizaje Activo en Python</text>
+      <text x="58" y="44" class="ui-sans" fill="#94a3b8" font-size="12">Enfocado 100% en dominar Python desde sus bases hasta aplicaciones reales.</text>
+    </g>
+
+    <!-- Pilar 3 -->
+    <g transform="translate(28, 274)">
+      <rect width="484" height="60" rx="12" fill="url(#innerCard)" stroke="url(#borderSpec)" stroke-width="1"/>
+      <rect x="14" y="14" width="32" height="32" rx="8" fill="#090c14" stroke="#c084fc" stroke-opacity="0.4"/>
+      <text x="30" y="34" text-anchor="middle" class="ui-mono" fill="#c084fc" font-size="11" font-weight="700">🏍️</text>
+      <text x="58" y="26" class="ui-sans" fill="#f1f5f9" font-size="13.5" font-weight="600">Pasión por las Motos &amp; la Precisión</text>
+      <text x="58" y="44" class="ui-sans" fill="#94a3b8" font-size="12">Disciplina, enfoque limpio y atención a cada detalle dentro y fuera del código.</text>
+    </g>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- TARJETA 2 (ARRIBA DERECHA): HOLOGRAMA DE RED NEURONAL     -->
+  <!-- ========================================================= -->
+  <g transform="translate(556, 4)">
+    <rect width="440" height="172" rx="16" fill="url(#glassCard)" stroke="url(#borderSpec)" stroke-width="1.2"/>
+    <rect width="440" height="172" rx="16" fill="url(#cardGlow2)"/>
+
+    <text x="26" y="32" class="ui-mono" fill="#64748b" font-size="10" font-weight="600" letter-spacing="1.5">
+      02 // ARQUITECTURA NEURONAL
+    </text>
+    <text x="342" y="32" class="ui-mono" fill="#38bdf8" font-size="10" font-weight="600">HOLOGRAM</text>
+
+    <!-- Red Neuronal Minimalista Linear Style -->
+    <g transform="translate(52, 46)">
+      <!-- Conexiones Base -->
+      <g stroke="#1e293b" stroke-width="1">
+        <line x1="20" y1="16" x2="115" y2="10"/>
+        <line x1="20" y1="16" x2="115" y2="42"/>
+        <line x1="20" y1="48" x2="115" y2="10"/>
+        <line x1="20" y1="48" x2="115" y2="42"/>
+        <line x1="20" y1="48" x2="115" y2="74"/>
+        <line x1="20" y1="80" x2="115" y2="42"/>
+        <line x1="20" y1="80" x2="115" y2="74"/>
+        <line x1="115" y1="10" x2="215" y2="26"/>
+        <line x1="115" y1="42" x2="215" y2="26"/>
+        <line x1="115" y1="42" x2="215" y2="62"/>
+        <line x1="115" y1="74" x2="215" y2="62"/>
+        <line x1="215" y1="26" x2="305" y2="44"/>
+        <line x1="215" y1="62" x2="305" y2="44"/>
+      </g>
+
+      <!-- Sinapsis Luminosas Animadas -->
+      <g stroke="url(#linearAccent)" stroke-width="1.5" class="synapse-flow">
+        <line x1="20" y1="16" x2="115" y2="42"/>
+        <line x1="20" y1="80" x2="115" y2="74"/>
+        <line x1="115" y1="42" x2="215" y2="26"/>
+        <line x1="115" y1="74" x2="215" y2="62"/>
+        <line x1="215" y1="26" x2="305" y2="44"/>
+        <line x1="215" y1="62" x2="305" y2="44"/>
+      </g>
+
+      <!-- Nodos -->
+      <circle cx="20" cy="16" r="5" fill="#0d1017" stroke="#38bdf8" stroke-width="2" class="node-breathe"/>
+      <circle cx="20" cy="48" r="5" fill="#0d1017" stroke="#38bdf8" stroke-width="2" class="node-breathe"/>
+      <circle cx="20" cy="80" r="5" fill="#0d1017" stroke="#38bdf8" stroke-width="2" class="node-breathe"/>
+
+      <circle cx="115" cy="10" r="5.5" fill="#1e1b4b" stroke="#818cf8" stroke-width="2"/>
+      <circle cx="115" cy="42" r="6" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" filter="url(#luxBloom)"/>
+      <circle cx="115" cy="74" r="5.5" fill="#1e1b4b" stroke="#818cf8" stroke-width="2"/>
+
+      <circle cx="215" cy="26" r="6" fill="#818cf8" stroke="#ffffff" stroke-width="1.5" filter="url(#luxBloom)"/>
+      <circle cx="215" cy="62" r="6" fill="#c084fc" stroke="#ffffff" stroke-width="1.5" filter="url(#luxBloom)"/>
+
+      <circle cx="305" cy="44" r="8" fill="#38bdf8" stroke="#ffffff" stroke-width="2" filter="url(#luxBloom)"/>
+    </g>
+
+    <text x="26" y="152" class="ui-mono" fill="#64748b" font-size="9.5">INPUT: RAW DATA</text>
+    <text x="172" y="152" class="ui-mono" fill="#64748b" font-size="9.5">PROCESSING</text>
+    <text x="305" y="152" class="ui-mono" fill="#c084fc" font-size="9.5" font-weight="600">AI INSIGHTS</text>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- TARJETA 3 (ABAJO DERECHA): HOLOGRAMA DE ANALÍTICA LINEAL  -->
+  <!-- ========================================================= -->
+  <g transform="translate(556, 188)">
+    <rect width="440" height="172" rx="16" fill="url(#glassCard)" stroke="url(#borderSpec)" stroke-width="1.2"/>
+
+    <text x="26" y="32" class="ui-mono" fill="#64748b" font-size="10" font-weight="600" letter-spacing="1.5">
+      03 // CURVA DE CRECIMIENTO &amp; DATOS
+    </text>
+    <text x="330" y="32" class="ui-mono" fill="#818cf8" font-size="10" font-weight="600">PYTHON 3.12</text>
+
+    <!-- Gráfico de Curva Suave Estilo Linear -->
+    <g transform="translate(26, 52)">
+      <line x1="0" y1="25" x2="388" y2="25" stroke="#ffffff" stroke-opacity="0.04"/>
+      <line x1="0" y1="55" x2="388" y2="55" stroke="#ffffff" stroke-opacity="0.04"/>
+      <line x1="0" y1="85" x2="388" y2="85" stroke="#ffffff" stroke-opacity="0.04"/>
+
+      <!-- Área bajo la curva -->
+      <path d="M 0 82 Q 65 75, 115 55 T 235 38 T 388 12 L 388 92 L 0 92 Z" fill="url(#areaGraph)"/>
+
+      <!-- Línea de la curva animada -->
+      <path d="M 0 82 Q 65 75, 115 55 T 235 38 T 388 12" fill="none" stroke="url(#linearAccent)" stroke-width="2.5" stroke-linecap="round" class="spline-draw" filter="url(#luxBloom)"/>
+
+      <!-- Puntos de datos interactivos -->
+      <circle cx="115" cy="55" r="4" fill="#0d1017" stroke="#38bdf8" stroke-width="2"/>
+      <circle cx="235" cy="38" r="4" fill="#0d1017" stroke="#818cf8" stroke-width="2"/>
+      <circle cx="388" cy="12" r="5" fill="#c084fc" stroke="#ffffff" stroke-width="1.5" class="dot-float" filter="url(#luxBloom)"/>
+    </g>
+
+    <text x="26" y="156" class="ui-mono" fill="#94a3b8" font-size="10">
+      Evolución continua en <tspan fill="#38bdf8" font-weight="600">Lógica, Ciencia de Datos e IA</tspan>
+    </text>
+  </g>
+</svg>

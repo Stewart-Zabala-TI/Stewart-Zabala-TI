@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 18" width="100%" height="18">
+  <defs>
+    <linearGradient id="luxLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="luxShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .shimmer-beam {
+      animation: beamSlide 5s ease-in-out infinite alternate;
+    }
+    @keyframes beamSlide {
+      0% { transform: translateX(-280px); }
+      100% { transform: translateX(280px); }
+    }
+  </style>
+  <line x1="60" y1="9" x2="940" y2="9" stroke="url(#luxLine)" stroke-width="1"/>
+  <rect x="410" y="8" width="180" height="2" rx="1" fill="url(#luxShimmer)" class="shimmer-beam"/>
+</svg>
