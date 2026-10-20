@@ -1,22 +1,22 @@
 <div align="center">
 
   <!-- ===================================================================== -->
-  <!-- 1. ENCABEZADO ANIMADO + HERO SUPERBIKE & TELEMETRÍA IA (DARK TECH)   -->
+  <!-- 1. BANNER PRINCIPAL: COSMIC CYBERSECURITY, DATA SCIENCE & AI (8K)     -->
   <!-- ===================================================================== -->
-  <a href="https://github.com/Stewart-Zabala-TI">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=25&duration=3000&pause=900&color=00F2FE&center=true&vCenter=true&width=850&lines=%E2%9A%A1+JORDAN+STEWART+ZABALA+CORREA;CIENCIA+DE+DATOS+E+INTELIGENCIA+ARTIFICIAL+%F0%9F%A7%A0;DESARROLLANDO+Y+APRENDIENDO+CON+PYTHON+%F0%9F%90%8D;PRECISI%C3%93N%2C+TELEMETR%C3%8DA+Y+PASION+POR+LAS+MOTOS+%F0%9F%8F%8D%EF%B8%8F" alt="Typing Header" />
-  </a>
-
-  <!-- ESCENA PRINCIPAL ANIMADA: SUPERBIKE + TACÓMETRO RPM + RED NEURONAL -->
   <p align="center">
-    <img src="./assets/hero-superbike.svg" alt="Jordan Stewart Zabala Correa - Superbike & AI Telemetry Hero" width="100%" />
+    <img src="./assets/cosmic-cyber-banner.jpg" alt="Jordan Stewart Zabala - Data Science, AI & Cybersecurity Cosmic Banner" width="100%" />
   </p>
+
+  <!-- ENCABEZADO ANIMADO (TYPING SVG) -->
+  <a href="https://github.com/Stewart-Zabala-TI">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=23&duration=3000&pause=900&color=00F2FE&center=true&vCenter=true&width=850&lines=%F0%9F%9A%80+JORDAN+STEWART+ZABALA+CORREA;DATA+SCIENCE%2C+AI+%26+CYBERSECURITY+%F0%9F%9B%A1%EF%B8%8F;UNDERGRADUATE+%2F%2F+ALWAYS+LEARNING+%28PYTHON+CORE%29+%F0%9F%90%8D" alt="Typing Header" />
+  </a>
 
   <!-- INSIGNIAS SUPERIORES DE ESTADO -->
   <p align="center">
-    <img src="https://img.shields.io/badge/ENFOQUE-CIENCIA%20DE%20DATOS%20%26%20IA-0d1117?style=for-the-badge&logo=openai&logoColor=00f2fe&labelColor=161b22" alt="Ciencia de Datos e IA" />
-    <img src="https://img.shields.io/badge/LENGUAJE-PYTHON%20100%25-0d1117?style=for-the-badge&logo=python&logoColor=58a6ff&labelColor=161b22" alt="Python" />
-    <img src="https://img.shields.io/badge/PASIÓN-MOTOS%20%26%20TECNOLOGÍA-0d1117?style=for-the-badge&logo=speedtest&logoColor=ff0844&labelColor=161b22" alt="Motos" />
+    <img src="https://img.shields.io/badge/ESPECIALIDAD-DATA%20SCIENCE%20%26%20IA-0d1117?style=for-the-badge&logo=openai&logoColor=00f2fe&labelColor=161b22" alt="Ciencia de Datos e IA" />
+    <img src="https://img.shields.io/badge/LENGUAJE-PYTHON%20CORE-0d1117?style=for-the-badge&logo=python&logoColor=58a6ff&labelColor=161b22" alt="Python" />
+    <img src="https://img.shields.io/badge/ENFOQUE-CYBERSECURITY%20%26%20ANALYTICS-0d1117?style=for-the-badge&logo=hackthebox&logoColor=a855f7&labelColor=161b22" alt="Cybersecurity" />
     <img src="https://komarev.com/ghpvc/?username=Stewart-Zabala-TI&label=VISTAS&color=00f2fe&style=for-the-badge" alt="Vistas del perfil" />
   </p>
 
