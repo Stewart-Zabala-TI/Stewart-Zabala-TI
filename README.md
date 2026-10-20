@@ -1,10 +1,10 @@
 <div align="center">
 
   <!-- ===================================================================== -->
-  <!-- 01. HERO BANNER: STEALTH TITANIUM & ELECTRIC ICE BLUE (ANIMADO)       -->
+  <!-- 01. HERO BANNER: UNIVERSIDAD HEMISFERIOS • TECNOLOGÍAS DE INFORMACIÓN -->
   <!-- ===================================================================== -->
   <a href="https://github.com/Stewart-Zabala-TI">
-    <img src="./assets/luxury-hero.svg" alt="Jordan Stewart Zabala Correa — Ciencia de Datos e IA" width="100%" />
+    <img src="./assets/luxury-hero.svg" alt="Jordan Stewart Zabala Correa — Universidad Hemisferios" width="100%" />
   </a>
 
 </div>
@@ -14,10 +14,10 @@
 </p>
 
 <!-- ===================================================================== -->
-<!-- 02. SOBRE MÍ & HOLOGRAMAS DE DATOS (BENTO TITANIO OSCURO)             -->
+<!-- 02. SOBRE MÍ & FORMACIÓN ACADÉMICA (BENTO CRISTAL CARBÓN UHE)         -->
 <!-- ===================================================================== -->
 <div align="center">
-  <img src="./assets/luxury-bento-about.svg" alt="Sobre mí, Holograma Neuronal y Curva de Datos" width="100%" />
+  <img src="./assets/luxury-bento-about.svg" alt="Sobre mí, Universidad Hemisferios y Curva Académica" width="100%" />
 </div>
 
 <p align="center">
@@ -25,10 +25,10 @@
 </p>
 
 <!-- ===================================================================== -->
-<!-- 03. PANEL EXCLUSIVO DE PYTHON & RUTA DE APRENDIZAJE                   -->
+<!-- 03. PANEL EXCLUSIVO: FUNDAMENTOS DE PROGRAMACIÓN CON PYTHON           -->
 <!-- ===================================================================== -->
 <div align="center">
-  <img src="./assets/luxury-python-panel.svg" alt="Panel Exclusivo Python 3 y Ruta de Aprendizaje" width="100%" />
+  <img src="./assets/luxury-python-panel.svg" alt="Fundamentos de Programación con Python — Universidad Hemisferios" width="100%" />
 </div>
 
 <p align="center">
@@ -36,7 +36,7 @@
 </p>
 
 <!-- ===================================================================== -->
-<!-- 04 & 05. PROYECTO DESTACADO (TI-METRICS) & LENGUAJE MÁS USADO         -->
+<!-- 04 & 05. PRIMER REPOSITORIO (TI-METRICS) & LENGUAJE DE APRENDIZAJE    -->
 <!-- ===================================================================== -->
 <div align="center">
   <a href="https://github.com/Stewart-Zabala-TI/TI-Metrics">
@@ -49,10 +49,10 @@
 </p>
 
 <!-- ===================================================================== -->
-<!-- 06. MINIJUEGO DE LA SERPIENTE EN LAS CONTRIBUCIONES                   -->
+<!-- 06. GITHUB CONTRIBUTION SNAKE • 17 CONTRIBUCIONES REALES EN OCTUBRE   -->
 <!-- ===================================================================== -->
 <div align="center">
-  <img src="./assets/luxury-snake.svg" alt="Contribution Snake — Actividad en GitHub" width="100%" />
+  <img src="./assets/luxury-snake.svg" alt="17 Contribuciones Reales — Stewart-Zabala-TI" width="100%" />
 </div>
 
 <p align="center">
@@ -60,36 +60,36 @@
 </p>
 
 <!-- ===================================================================== -->
-<!-- 07. REDES DE CONTACTO (ENLACES REALES ACTIVOS)                        -->
+<!-- 07. REDES DE CONTACTO PERSONALES                                      -->
 <!-- ===================================================================== -->
 <div align="center">
 
   <p align="center">
     <a href="mailto:stewartzabala@gmail.com">
-      <img src="https://img.shields.io/badge/Gmail-stewartzabala%40gmail.com-080b11?style=for-the-badge&logo=gmail&logoColor=00d2ff&labelColor=111722" alt="Gmail" />
+      <img src="https://img.shields.io/badge/Gmail-stewartzabala%40gmail.com-0d1216?style=for-the-badge&logo=gmail&logoColor=ff5a1f&labelColor=182026" alt="Gmail" />
     </a>
     <a href="https://www.instagram.com/estiguard_z/">
-      <img src="https://img.shields.io/badge/Instagram-%40estiguard__z-080b11?style=for-the-badge&logo=instagram&logoColor=e2e8f0&labelColor=111722" alt="Instagram" />
+      <img src="https://img.shields.io/badge/Instagram-%40estiguard__z-0d1216?style=for-the-badge&logo=instagram&logoColor=ffa940&labelColor=182026" alt="Instagram" />
     </a>
     <a href="https://www.tiktok.com/@estiguard_z">
-      <img src="https://img.shields.io/badge/TikTok-%40estiguard__z-080b11?style=for-the-badge&logo=tiktok&logoColor=00d2ff&labelColor=111722" alt="TikTok" />
+      <img src="https://img.shields.io/badge/TikTok-%40estiguard__z-0d1216?style=for-the-badge&logo=tiktok&logoColor=ff5a1f&labelColor=182026" alt="TikTok" />
     </a>
     <a href="https://www.facebook.com/jordan.zabala.79/">
-      <img src="https://img.shields.io/badge/Facebook-Jordan%20Zabala-080b11?style=for-the-badge&logo=facebook&logoColor=38bdf8&labelColor=111722" alt="Facebook" />
+      <img src="https://img.shields.io/badge/Facebook-Jordan%20Zabala-0d1216?style=for-the-badge&logo=facebook&logoColor=ffa940&labelColor=182026" alt="Facebook" />
     </a>
     <a href="https://wa.me/593996171363">
-      <img src="https://img.shields.io/badge/WhatsApp-0996171363-080b11?style=for-the-badge&logo=whatsapp&logoColor=00d2ff&labelColor=111722" alt="WhatsApp" />
+      <img src="https://img.shields.io/badge/WhatsApp-0996171363-0d1216?style=for-the-badge&logo=whatsapp&logoColor=ff5a1f&labelColor=182026" alt="WhatsApp" />
     </a>
   </p>
 
-  <!-- Contador sutil de visitas en Azul Cobalto -->
+  <!-- Contador de visitas institucional -->
   <p align="center">
-    <img src="https://komarev.com/ghpvc/?username=Stewart-Zabala-TI&label=VISITAS%20AL%20PERFIL&color=0284c7&style=flat-square" alt="Visitas" />
+    <img src="https://komarev.com/ghpvc/?username=Stewart-Zabala-TI&label=VISITAS%20AL%20PERFIL&color=ff5a1f&style=flat-square" alt="Visitas" />
   </p>
 
 </div>
 
-<!-- PIE DE PÁGINA TITANIO & AZUL ELÉCTRICO -->
+<!-- PIE DE PÁGINA UNIVERSIDAD HEMISFERIOS -->
 <div align="center">
   <img src="./assets/luxury-footer.svg" width="100%" alt="Footer" />
 </div>

@@ -2,13 +2,13 @@
   <defs>
     <linearGradient id="luxLine" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#64748b" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#ff7a00" stop-opacity="0.25"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="luxShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00d2ff" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#00d2ff" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#cbd5e1" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#ff5a1f" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ff7a00" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffa940" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <style>

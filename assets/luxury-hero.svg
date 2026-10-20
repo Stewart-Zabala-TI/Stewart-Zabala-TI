@@ -1,61 +1,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 350" width="100%" height="100%">
   <defs>
-    <!-- Fondo Obsidiana & Acero Oscuro (Stealth Titanium) -->
-    <linearGradient id="bgLuxury" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#040609"/>
-      <stop offset="50%" stop-color="#080c14"/>
-      <stop offset="100%" stop-color="#05070b"/>
+    <!-- Fondo Carbón Oscuro Institucional UHE -->
+    <linearGradient id="bgUHE" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e12"/>
+      <stop offset="50%" stop-color="#12181d"/>
+      <stop offset="100%" stop-color="#0b0f14"/>
     </linearGradient>
 
-    <!-- Luz Ambiental Azul Cobalto / Eléctrico Derecha -->
-    <radialGradient id="ambientCobalt" cx="76%" cy="50%" r="48%">
-      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.22"/>
-      <stop offset="45%" stop-color="#1d4ed8" stop-opacity="0.10"/>
-      <stop offset="100%" stop-color="#040609" stop-opacity="0"/>
+    <!-- Resplandor Naranja Institucional UHE -->
+    <radialGradient id="glowOrange" cx="78%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff5a1f" stop-opacity="0.25"/>
+      <stop offset="45%" stop-color="#ff7a00" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#0a0e12" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Luz Ambiental Titanio / Hielo Izquierda -->
-    <radialGradient id="ambientIce" cx="25%" cy="30%" r="45%">
-      <stop offset="0%" stop-color="#00d2ff" stop-opacity="0.12"/>
-      <stop offset="55%" stop-color="#475569" stop-opacity="0.06"/>
-      <stop offset="100%" stop-color="#040609" stop-opacity="0"/>
+    <!-- Resplandor Ámbar Superior -->
+    <radialGradient id="glowAmber" cx="25%" cy="30%" r="45%">
+      <stop offset="0%" stop-color="#ffa940" stop-opacity="0.14"/>
+      <stop offset="60%" stop-color="#ff5a1f" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#0a0e12" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Gradiente Titanio Cepillado para el Nombre -->
-    <linearGradient id="titleMetal" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Gradiente Nombre Blanco Metálico -->
+    <linearGradient id="titleWhite" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="60%" stop-color="#e2e8f0"/>
-      <stop offset="100%" stop-color="#94a3b8"/>
-    </linearGradient>
-
-    <!-- Gradiente Azul Eléctrico a Plata Titanio -->
-    <linearGradient id="subLinear" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00d2ff"/>
-      <stop offset="55%" stop-color="#38bdf8"/>
+      <stop offset="70%" stop-color="#f1f5f9"/>
       <stop offset="100%" stop-color="#cbd5e1"/>
     </linearGradient>
 
-    <!-- Borde Especular de Titanio (Glassmorphism) -->
+    <!-- Gradiente Naranja UHE -->
+    <linearGradient id="orangeUHE" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff5a1f"/>
+      <stop offset="60%" stop-color="#ff7a00"/>
+      <stop offset="100%" stop-color="#ffa940"/>
+    </linearGradient>
+
+    <!-- Borde Especular de Cristal con acento UHE -->
     <linearGradient id="glassBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.20"/>
-      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#64748b" stop-opacity="0.06"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="50%" stop-color="#ff7a00" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
     </linearGradient>
 
-    <!-- Relleno de Cristal Gunmetal -->
+    <!-- Relleno Cristal Dark Carbón -->
     <linearGradient id="glassFill" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#111722" stop-opacity="0.82"/>
-      <stop offset="100%" stop-color="#0a0e16" stop-opacity="0.90"/>
+      <stop offset="0%" stop-color="#182026" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0e1418" stop-opacity="0.92"/>
     </linearGradient>
 
-    <!-- Anillo Orbital Titanio & Azul Eléctrico -->
-    <linearGradient id="orbitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00d2ff" stop-opacity="0.95"/>
-      <stop offset="50%" stop-color="#2563eb" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#94a3b8" stop-opacity="0.08"/>
+    <!-- Anillo Orbital Naranja UHE -->
+    <linearGradient id="orbitUHE" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff5a1f" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#ff7a00" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ffa940" stop-opacity="0.08"/>
     </linearGradient>
 
-    <filter id="softBloom" x="-25%" y="-25%" width="150%" height="150%">
+    <filter id="softGlow" x="-25%" y="-25%" width="150%" height="150%">
       <feGaussianBlur stdDeviation="3.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
@@ -87,48 +87,22 @@
     }
     .star-twinkle-1 { animation: twinkle 3s ease-in-out infinite alternate; }
     .star-twinkle-2 { animation: twinkle 4.2s ease-in-out 1.2s infinite alternate; }
-    .star-twinkle-3 { animation: twinkle 2.6s ease-in-out 0.7s infinite alternate; }
-    .shooting-code {
-      stroke-dasharray: 65 480;
-      animation: shootStar 4.8s linear infinite;
-    }
-    .status-pulse {
-      animation: dotPulse 2s ease-in-out infinite;
-    }
+    .status-pulse { animation: dotPulse 2s ease-in-out infinite; }
 
-    @keyframes rotCW {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    @keyframes rotCCW {
-      from { transform: rotate(360deg); }
-      to { transform: rotate(0deg); }
-    }
-    @keyframes floatGentle {
-      0% { transform: translateY(-4px); }
-      100% { transform: translateY(4px); }
-    }
-    @keyframes twinkle {
-      0% { opacity: 0.18; }
-      100% { opacity: 0.85; }
-    }
-    @keyframes shootStar {
-      from { stroke-dashoffset: 545; }
-      to { stroke-dashoffset: 0; }
-    }
-    @keyframes dotPulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.35; }
-    }
+    @keyframes rotCW { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes rotCCW { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
+    @keyframes floatGentle { 0% { transform: translateY(-4px); } 100% { transform: translateY(4px); } }
+    @keyframes twinkle { 0% { opacity: 0.18; } 100% { opacity: 0.85; } }
+    @keyframes dotPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
   </style>
 
   <g clip-path="url(#heroClip)">
-    <!-- 1. FONDO Y LUCES AMBIENTALES TITANIO / AZUL ELÉCTRICO -->
-    <rect width="1000" height="350" fill="url(#bgLuxury)"/>
-    <rect width="1000" height="350" fill="url(#ambientIce)"/>
-    <rect width="1000" height="350" fill="url(#ambientCobalt)"/>
+    <!-- 1. FONDO Y LUCES AMBIENTALES UHE -->
+    <rect width="1000" height="350" fill="url(#bgUHE)"/>
+    <rect width="1000" height="350" fill="url(#glowAmber)"/>
+    <rect width="1000" height="350" fill="url(#glowOrange)"/>
 
-    <!-- Cuadrícula Técnica Acero (Stealth Grid) -->
+    <!-- Retícula Sutil Carbón UHE -->
     <g stroke="#ffffff" stroke-opacity="0.025" stroke-width="1">
       <line x1="0" y1="70" x2="1000" y2="70"/>
       <line x1="0" y1="140" x2="1000" y2="140"/>
@@ -140,118 +114,97 @@
       <line x1="800" y1="0" x2="800" y2="350"/>
     </g>
 
-    <!-- Constelación de Nodos en Azul Hielo y Plata -->
-    <g stroke="#38bdf8" stroke-opacity="0.18" stroke-width="0.8">
-      <line x1="480" y1="55" x2="545" y2="85"/>
-      <line x1="545" y1="85" x2="610" y2="48"/>
-      <line x1="545" y1="85" x2="585" y2="135"/>
-      <line x1="885" y1="65" x2="940" y2="105"/>
-      <line x1="940" y1="105" x2="915" y2="165"/>
-    </g>
-    <circle cx="480" cy="55" r="2" fill="#00d2ff" class="star-twinkle-1"/>
-    <circle cx="545" cy="85" r="2.5" fill="#94a3b8" class="star-twinkle-2"/>
-    <circle cx="610" cy="48" r="1.8" fill="#ffffff" class="star-twinkle-3"/>
-    <circle cx="585" cy="135" r="2" fill="#38bdf8" class="star-twinkle-1"/>
-    <circle cx="885" cy="65" r="2" fill="#94a3b8" class="star-twinkle-2"/>
-    <circle cx="940" cy="105" r="2.5" fill="#00d2ff" class="star-twinkle-3"/>
-    <circle cx="915" cy="165" r="1.5" fill="#ffffff" class="star-twinkle-1"/>
-    <circle cx="120" cy="42" r="1.5" fill="#ffffff" class="star-twinkle-2"/>
-    <circle cx="340" cy="308" r="2" fill="#38bdf8" class="star-twinkle-3"/>
-
-    <!-- Haces de Datos (Shooting Data Streams) -->
-    <line x1="380" y1="20" x2="620" y2="140" stroke="url(#subLinear)" stroke-width="1.2" stroke-linecap="round" opacity="0.45" class="shooting-code"/>
-    <line x1="520" y1="240" x2="760" y2="340" stroke="url(#subLinear)" stroke-width="1" stroke-linecap="round" opacity="0.35" class="shooting-code"/>
+    <!-- Constelaciones y Puntos de Luz -->
+    <circle cx="480" cy="55" r="2" fill="#ff7a00" class="star-twinkle-1"/>
+    <circle cx="545" cy="85" r="2.5" fill="#ffa940" class="star-twinkle-2"/>
+    <circle cx="610" cy="48" r="1.8" fill="#ffffff" class="star-twinkle-1"/>
+    <circle cx="885" cy="65" r="2" fill="#ff5a1f" class="star-twinkle-2"/>
+    <circle cx="940" cy="105" r="2.5" fill="#ffa940" class="star-twinkle-1"/>
 
     <!-- ================================================================= -->
-    <!-- LADO IZQUIERDO: TIPOGRAFÍA TITANIO & BADGES GUNMETAL              -->
+    <!-- LADO IZQUIERDO: DATOS REALES DE ESTUDIANTE EN UHE                 -->
     <!-- ================================================================= -->
-    <g transform="translate(52, 46)">
+    <g transform="translate(52, 44)">
 
-      <!-- Pill Superior -->
-      <rect x="0" y="0" width="320" height="28" rx="14" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1"/>
-      <circle cx="16" cy="14" r="4" fill="#00d2ff" class="status-pulse" filter="url(#softBloom)"/>
-      <text x="30" y="18" class="ui-mono" fill="#cbd5e1" font-size="10.5" font-weight="600" letter-spacing="1.2">
-        UNDERGRADUATE // ALWAYS LEARNING 🚀
+      <!-- Pill Superior: Estudiante en Universidad Hemisferios -->
+      <rect x="0" y="0" width="375" height="28" rx="14" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1"/>
+      <circle cx="16" cy="14" r="4" fill="#ff5a1f" class="status-pulse" filter="url(#softGlow)"/>
+      <text x="30" y="18" class="ui-mono" fill="#f8fafc" font-size="10.5" font-weight="600" letter-spacing="1">
+        UNIVERSIDAD HEMISFERIOS // QUITO, ECUADOR 🇪🇨
       </text>
 
-      <!-- Nombre Principal en Titanio Cepillado -->
-      <text x="0" y="74" class="ui-sans" fill="url(#titleMetal)" font-size="34" font-weight="800" letter-spacing="-0.5">
-        Jordan Stewart Zabala
+      <!-- Nombre Completo -->
+      <text x="0" y="74" class="ui-sans" fill="url(#titleWhite)" font-size="33" font-weight="800" letter-spacing="-0.5">
+        Jordan Stewart Zabala Correa
       </text>
 
-      <!-- Carrera / Enfoque en Azul Eléctrico & Plata -->
-      <text x="0" y="108" class="ui-sans" fill="url(#subLinear)" font-size="19" font-weight="700" letter-spacing="1.5">
-        CIENCIA DE DATOS E INTELIGENCIA ARTIFICIAL
+      <!-- Carrera y Enfoque Real -->
+      <text x="0" y="106" class="ui-sans" fill="url(#orangeUHE)" font-size="18.5" font-weight="700" letter-spacing="1">
+        TECNOLOGÍAS DE LA INFORMACIÓN • PROGRAMACIÓN
       </text>
 
-      <!-- Descripción minimalista -->
-      <text x="0" y="138" class="ui-sans" fill="#94a3b8" font-size="13.5">
-        Construyendo soluciones basadas en datos y aprendiendo paso a paso con <tspan fill="#f8fafc" font-weight="600">Python</tspan>.
+      <!-- Descripción 100% Real y Honesta -->
+      <text x="0" y="136" class="ui-sans" fill="#cbd5e1" font-size="13.5">
+        Iniciando mi carrera en TI en la <tspan fill="#ffffff" font-weight="600">UHE</tspan> y aprendiendo <tspan fill="#ff7a00" font-weight="600">Fundamentos de Programación</tspan> con Python.
       </text>
 
-      <!-- 4 Badges en Gunmetal Titanium (Cero morado) -->
+      <!-- 4 Badges Reales en Estilo UHE -->
       <g transform="translate(0, 164)">
-        <!-- Badge 1 -->
-        <rect x="0" y="0" width="175" height="34" rx="8" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1"/>
-        <text x="87.5" y="21" text-anchor="middle" class="ui-mono" fill="#00d2ff" font-size="11" font-weight="600" letter-spacing="0.8">
-          [ PYTHON CORE ]
+        <rect x="0" y="0" width="190" height="34" rx="8" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1"/>
+        <text x="95" y="21" text-anchor="middle" class="ui-mono" fill="#ff5a1f" font-size="11" font-weight="600" letter-spacing="0.8">
+          [ U. HEMISFERIOS 🎓 ]
         </text>
 
-        <!-- Badge 2 -->
-        <rect x="188" y="0" width="185" height="34" rx="8" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1"/>
-        <text x="280.5" y="21" text-anchor="middle" class="ui-mono" fill="#e2e8f0" font-size="11" font-weight="600" letter-spacing="0.8">
-          [ DATA SCIENCE ]
+        <rect x="202" y="0" width="180" height="34" rx="8" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1"/>
+        <text x="292" y="21" text-anchor="middle" class="ui-mono" fill="#ffa940" font-size="11" font-weight="600" letter-spacing="0.8">
+          [ PYTHON INICIAL 🐍 ]
         </text>
 
-        <!-- Badge 3 -->
-        <rect x="0" y="44" width="175" height="34" rx="8" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1"/>
-        <text x="87.5" y="65" text-anchor="middle" class="ui-mono" fill="#38bdf8" font-size="11" font-weight="600" letter-spacing="0.8">
-          [ AI &amp; ANALYTICS ]
+        <rect x="0" y="44" width="190" height="34" rx="8" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1"/>
+        <text x="95" y="65" text-anchor="middle" class="ui-mono" fill="#ffffff" font-size="11" font-weight="600" letter-spacing="0.8">
+          [ FUNDAMENTOS TI 💻 ]
         </text>
 
-        <!-- Badge 4 -->
-        <rect x="188" y="44" width="185" height="34" rx="8" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1"/>
-        <text x="280.5" y="65" text-anchor="middle" class="ui-mono" fill="#94a3b8" font-size="11" font-weight="600" letter-spacing="0.8">
-          [ MOTO SPIRIT 🏍️ ]
+        <rect x="202" y="44" width="180" height="34" rx="8" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1"/>
+        <text x="292" y="65" text-anchor="middle" class="ui-mono" fill="#e2e8f0" font-size="11" font-weight="600" letter-spacing="0.8">
+          [ PASIÓN MOTOS 🏍️ ]
         </text>
       </g>
 
     </g>
 
     <!-- ================================================================= -->
-    <!-- LADO DERECHO: REACTOR ORBITAL TITANIO & AZUL ELÉCTRICO            -->
+    <!-- LADO DERECHO: OBSERVATORIO UHE & OCTOCAT / PYTHON CORE             -->
     <!-- ================================================================= -->
-    <g transform="translate(765, 175)">
+    <g transform="translate(775, 175)">
+      <circle cx="0" cy="0" r="128" fill="none" stroke="#1e2629" stroke-width="1" stroke-dasharray="4 8"/>
 
-      <!-- Halo Técnico Exterior -->
-      <circle cx="0" cy="0" r="128" fill="none" stroke="#1e293b" stroke-width="1" stroke-dasharray="4 8"/>
-
-      <!-- Anillo Orbital 1 (Giro Horario) -->
+      <!-- Anillo Orbital Naranja UHE -->
       <g class="orbit-cw">
-        <circle cx="0" cy="0" r="112" fill="none" stroke="url(#orbitGrad)" stroke-width="1.8"/>
-        <circle cx="0" cy="-112" r="4" fill="#00d2ff" filter="url(#softBloom)"/>
-        <circle cx="112" cy="0" r="2.5" fill="#94a3b8"/>
+        <circle cx="0" cy="0" r="112" fill="none" stroke="url(#orbitUHE)" stroke-width="2"/>
+        <circle cx="0" cy="-112" r="4.5" fill="#ff5a1f" filter="url(#softGlow)"/>
+        <circle cx="112" cy="0" r="3" fill="#ffa940"/>
       </g>
 
-      <!-- Anillo Orbital Planetario Inclinado (Azul Hielo & Acero) -->
+      <!-- Anillo Elíptico 3D -->
       <g transform="rotate(-24) scale(1, 0.42)">
-        <circle cx="0" cy="0" r="148" fill="none" stroke="#00d2ff" stroke-width="3" stroke-opacity="0.55" filter="url(#softBloom)"/>
-        <circle cx="0" cy="0" r="136" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="40 20" class="orbit-cw"/>
+        <circle cx="0" cy="0" r="148" fill="none" stroke="#ff7a00" stroke-width="3" stroke-opacity="0.65" filter="url(#softGlow)"/>
+        <circle cx="0" cy="0" r="136" fill="none" stroke="#ffa940" stroke-width="1.5" stroke-dasharray="40 20" class="orbit-cw"/>
       </g>
 
-      <!-- Anillo Orbital 2 (Giro Antihorario) -->
+      <!-- Anillo Antihorario -->
       <g class="orbit-ccw">
-        <circle cx="0" cy="0" r="84" fill="none" stroke="#64748b" stroke-width="1.2" stroke-dasharray="28 16" stroke-opacity="0.7"/>
-        <circle cx="-84" cy="0" r="3.5" fill="#38bdf8" filter="url(#softBloom)"/>
+        <circle cx="0" cy="0" r="84" fill="none" stroke="#ffa940" stroke-width="1.2" stroke-dasharray="28 16" stroke-opacity="0.65"/>
+        <circle cx="-84" cy="0" r="3.5" fill="#ff5a1f" filter="url(#softGlow)"/>
       </g>
 
-      <!-- Escudo Hexagonal de Acero & Titanio Central -->
+      <!-- Núcleo Central Flotante -->
       <g class="float-core">
-        <polygon points="0,-68 58,-34 58,34 0,68 -58,34 -58,-34" fill="url(#glassFill)" stroke="url(#subLinear)" stroke-width="2" filter="url(#softBloom)"/>
-        <polygon points="0,-58 49,-28 49,28 0,58 -49,28 -49,-28" fill="#06090f" stroke="#1e293b" stroke-width="1"/>
+        <polygon points="0,-68 58,-34 58,34 0,68 -58,34 -58,-34" fill="url(#glassFill)" stroke="url(#orangeUHE)" stroke-width="2" filter="url(#softGlow)"/>
+        <polygon points="0,-58 49,-28 49,28 0,58 -49,28 -49,-28" fill="#0d1216" stroke="#1e2629" stroke-width="1"/>
 
-        <!-- Líneas de circuito internas -->
-        <g stroke="#00d2ff" stroke-width="0.9" stroke-opacity="0.45">
+        <!-- Líneas de circuito UHE -->
+        <g stroke="#ff7a00" stroke-width="0.9" stroke-opacity="0.55">
           <line x1="0" y1="-58" x2="0" y2="-38"/>
           <line x1="49" y1="-28" x2="32" y2="-18"/>
           <line x1="-49" y1="-28" x2="-32" y2="-18"/>
@@ -259,31 +212,24 @@
           <line x1="-49" y1="28" x2="-32" y2="18"/>
         </g>
 
-        <!-- Silueta Minimalista de Octocat en Titanio y Azul Eléctrico -->
-        <circle cx="0" cy="0" r="28" fill="#0b1018" stroke="url(#glassBorder)" stroke-width="1.5"/>
-        <path d="M -14 -6 
-                 L -16 -17 L -7 -12 
-                 Q 0 -15 7 -12 
-                 L 16 -17 L 14 -6 
-                 C 18 2, 16 12, 8 15 
-                 L 8 22 L -8 22 L -8 15 
-                 C -16 12, -18 2, -14 -6 Z" 
-              fill="url(#subLinear)" opacity="0.95"/>
-        <rect x="-9" y="-4" width="6" height="3" rx="1.5" fill="#05070b"/>
-        <rect x="3" y="-4" width="6" height="3" rx="1.5" fill="#05070b"/>
+        <!-- Silueta Octocat en Naranja UHE -->
+        <circle cx="0" cy="0" r="28" fill="#141c22" stroke="url(#glassBorder)" stroke-width="1.5"/>
+        <path d="M -14 -6 L -16 -17 L -7 -12 Q 0 -15 7 -12 L 16 -17 L 14 -6 C 18 2, 16 12, 8 15 L 8 22 L -8 22 L -8 15 C -16 12, -18 2, -14 -6 Z" 
+              fill="url(#orangeUHE)" opacity="0.95"/>
+        <rect x="-9" y="-4" width="6" height="3" rx="1.5" fill="#0a0e12"/>
+        <rect x="3" y="-4" width="6" height="3" rx="1.5" fill="#0a0e12"/>
       </g>
 
-      <!-- Coordenadas HUD -->
-      <text x="-135" y="-112" class="ui-mono" fill="#64748b" font-size="9" letter-spacing="1">SYS.ORBIT // 01</text>
-      <text x="65" y="122" class="ui-mono" fill="#00d2ff" font-size="9" letter-spacing="1">PY.CORE // 3.12</text>
+      <text x="-135" y="-112" class="ui-mono" fill="#8b959e" font-size="9" letter-spacing="1">CAMPUS // UHE</text>
+      <text x="58" y="122" class="ui-mono" fill="#ff7a00" font-size="9" letter-spacing="1">SEMESTRE I // 2026</text>
     </g>
 
-    <!-- Marco HUD Perimetral Minimalista -->
+    <!-- Marco HUD -->
     <rect x="12" y="12" width="976" height="326" rx="12" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
-    <text x="28" y="326" class="ui-mono" fill="#475569" font-size="9" letter-spacing="1.5">COORDS: 00°13'S 78°30'W // STEWART-ZABALA-TI</text>
-    <text x="835" y="326" class="ui-mono" fill="#475569" font-size="9" letter-spacing="1.5">STATUS: OPERATIONAL</text>
+    <text x="28" y="326" class="ui-mono" fill="#64748b" font-size="9" letter-spacing="1.5">UNIVERSIDAD HEMISFERIOS • FACULTAD DE TI</text>
+    <text x="805" y="326" class="ui-mono" fill="#ff7a00" font-size="9" letter-spacing="1.5">STEWART-ZABALA-TI</text>
 
-    <!-- Borde Exterior Titanio -->
+    <!-- Borde Exterior -->
     <rect x="0.75" y="0.75" width="998.5" height="348.5" rx="17.25" fill="none" stroke="url(#glassBorder)" stroke-width="1.5"/>
   </g>
 </svg>

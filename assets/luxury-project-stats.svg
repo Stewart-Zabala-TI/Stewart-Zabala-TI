@@ -1,25 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 168" width="100%" height="100%">
   <defs>
     <linearGradient id="cardLux" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b0f17"/>
-      <stop offset="100%" stop-color="#06090e"/>
+      <stop offset="0%" stop-color="#141b21"/>
+      <stop offset="100%" stop-color="#0a0e12"/>
     </linearGradient>
 
     <linearGradient id="specLux" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
-      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.10"/>
-      <stop offset="100%" stop-color="#64748b" stop-opacity="0.04"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="50%" stop-color="#ff7a00" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
     </linearGradient>
 
     <linearGradient id="gradBar" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00d2ff"/>
-      <stop offset="55%" stop-color="#38bdf8"/>
-      <stop offset="100%" stop-color="#cbd5e1"/>
+      <stop offset="0%" stop-color="#ff5a1f"/>
+      <stop offset="60%" stop-color="#ff7a00"/>
+      <stop offset="100%" stop-color="#ffa940"/>
     </linearGradient>
 
     <radialGradient id="projGlowLux" cx="85%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#06090e" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#ff5a1f" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0a0e12" stop-opacity="0"/>
     </radialGradient>
 
     <filter id="glowMini" x="-20%" y="-20%" width="140%" height="140%">
@@ -39,76 +39,71 @@
       stroke-dasharray: 82 140;
       animation: gaugeSweep 3s ease-in-out infinite alternate;
     }
-    .dot-live {
-      animation: blinkDot 1.8s ease-in-out infinite;
-    }
+    .dot-live { animation: blinkDot 1.8s ease-in-out infinite; }
 
     @keyframes gaugeSweep {
       from { stroke-dasharray: 68 140; }
       to { stroke-dasharray: 102 140; }
     }
-    @keyframes blinkDot {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
-    }
+    @keyframes blinkDot { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
   </style>
 
-  <!-- TARJETA IZQUIERDA: PROYECTO DESTACADO (TI-METRICS) -->
+  <!-- TARJETA IZQUIERDA: PRIMER REPOSITORIO (TI-METRICS) -->
   <g transform="translate(4, 4)">
     <rect width="540" height="160" rx="16" fill="url(#cardLux)" stroke="url(#specLux)" stroke-width="1.2"/>
     <rect width="540" height="160" rx="16" fill="url(#projGlowLux)"/>
 
-    <text x="28" y="32" class="ui-mono" fill="#64748b" font-size="10" font-weight="600" letter-spacing="1.5">
-      04 // PROYECTO DESTACADO
+    <text x="28" y="32" class="ui-mono" fill="#8c97a0" font-size="10" font-weight="600" letter-spacing="1.5">
+      04 // PRIMER REPOSITORIO DE PRÁCTICA
     </text>
 
-    <rect x="392" y="18" width="120" height="22" rx="11" fill="#0f1520" stroke="url(#specLux)" stroke-width="1"/>
-    <circle cx="406" cy="29" r="3.5" fill="#00d2ff" class="dot-live"/>
+    <rect x="392" y="18" width="120" height="22" rx="11" fill="#1b242c" stroke="url(#specLux)" stroke-width="1"/>
+    <circle cx="406" cy="29" r="3.5" fill="#ff5a1f" class="dot-live"/>
     <text x="417" y="33" class="ui-mono" fill="#cbd5e1" font-size="9.5" font-weight="600">PUBLIC REPO</text>
 
-    <text x="28" y="66" class="ui-sans" fill="#f8fafc" font-size="20" font-weight="700">
-      Métricas TI <tspan fill="#38bdf8" font-weight="500">(TI-Metrics)</tspan>
+    <text x="28" y="66" class="ui-sans" fill="#ffffff" font-size="20" font-weight="700">
+      Métricas TI <tspan fill="#ff7a00" font-weight="500">(TI-Metrics)</tspan>
     </text>
 
-    <text x="28" y="92" class="ui-sans" fill="#94a3b8" font-size="13">
-      Motor de Analítica de Logs y Monitoreo de Infraestructura desarrollado
+    <text x="28" y="92" class="ui-sans" fill="#cbd5e1" font-size="13">
+      Proyecto inicial de monitoreo y analítica de datos desarrollado
     </text>
-    <text x="28" y="110" class="ui-sans" fill="#94a3b8" font-size="13">
-      íntegramente en Python.
+    <text x="28" y="110" class="ui-sans" fill="#cbd5e1" font-size="13">
+      en Python como práctica académica.
     </text>
 
-    <circle cx="34" cy="136" r="5" fill="#00d2ff"/>
-    <text x="46" y="140" class="ui-mono" fill="#e2e8f0" font-size="11" font-weight="600">Python</text>
-    <text x="112" y="140" class="ui-mono" fill="#64748b" font-size="11">•  Log Analytics</text>
-    <text x="232" y="140" class="ui-mono" fill="#64748b" font-size="11">•  Infrastructure</text>
-    <text x="418" y="140" class="ui-mono" fill="#00d2ff" font-size="11" font-weight="600">Ver código →</text>
+    <circle cx="34" cy="136" r="5" fill="#ff5a1f"/>
+    <text x="46" y="140" class="ui-mono" fill="#ffffff" font-size="11" font-weight="600">Python</text>
+    <text x="112" y="140" class="ui-mono" fill="#8c97a0" font-size="11">•  Programación I</text>
+    <text x="245" y="140" class="ui-mono" fill="#8c97a0" font-size="11">•  UHE 2026</text>
+    <text x="418" y="140" class="ui-mono" fill="#ff7a00" font-size="11" font-weight="600">Ver código →</text>
   </g>
 
   <!-- TARJETA DERECHA: LENGUAJE MÁS USADO (PYTHON 100%) -->
   <g transform="translate(556, 4)">
     <rect width="440" height="160" rx="16" fill="url(#cardLux)" stroke="url(#specLux)" stroke-width="1.2"/>
 
-    <text x="28" y="32" class="ui-mono" fill="#64748b" font-size="10" font-weight="600" letter-spacing="1.5">
-      05 // LENGUAJE MÁS USADO
+    <text x="28" y="32" class="ui-mono" fill="#8c97a0" font-size="10" font-weight="600" letter-spacing="1.5">
+      05 // LENGUAJE DE APRENDIZAJE
     </text>
 
-    <text x="28" y="68" class="ui-sans" fill="#f8fafc" font-size="22" font-weight="700">Python</text>
-    <text x="112" y="68" class="ui-mono" fill="#00d2ff" font-size="16" font-weight="700">100.0%</text>
+    <text x="28" y="68" class="ui-sans" fill="#ffffff" font-size="22" font-weight="700">Python</text>
+    <text x="112" y="68" class="ui-mono" fill="#ff5a1f" font-size="16" font-weight="700">100.0%</text>
 
-    <rect x="28" y="86" width="275" height="8" rx="4" fill="#131824"/>
+    <rect x="28" y="86" width="275" height="8" rx="4" fill="#1a2228"/>
     <rect x="28" y="86" width="275" height="8" rx="4" fill="url(#gradBar)" filter="url(#glowMini)"/>
 
-    <text x="28" y="120" class="ui-sans" fill="#94a3b8" font-size="12.5">
-      Todo mi código actual y mis repositorios están
+    <text x="28" y="120" class="ui-sans" fill="#cbd5e1" font-size="12.5">
+      Mi lenguaje de estudio en la universidad y en
     </text>
-    <text x="28" y="138" class="ui-sans" fill="#94a3b8" font-size="12.5">
-      construidos en <tspan fill="#e2e8f0" font-weight="600">Python 3</tspan>.
+    <text x="28" y="138" class="ui-sans" fill="#cbd5e1" font-size="12.5">
+      todos mis repositorios actuales de GitHub.
     </text>
 
     <g transform="translate(366, 92)">
-      <circle cx="0" cy="0" r="38" fill="none" stroke="#131824" stroke-width="6"/>
+      <circle cx="0" cy="0" r="38" fill="none" stroke="#1a2228" stroke-width="6"/>
       <circle cx="0" cy="0" r="38" fill="none" stroke="url(#gradBar)" stroke-width="5" stroke-linecap="round" transform="rotate(-90)" class="gauge-spin" filter="url(#glowMini)"/>
-      <text x="0" y="4" text-anchor="middle" class="ui-mono" fill="#f8fafc" font-size="12" font-weight="700">100%</text>
+      <text x="0" y="4" text-anchor="middle" class="ui-mono" fill="#ffffff" font-size="12" font-weight="700">100%</text>
     </g>
   </g>
 </svg>

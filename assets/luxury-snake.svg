@@ -1,25 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 225" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230" width="100%" height="100%">
   <defs>
     <linearGradient id="snakeGlass" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b0f17"/>
-      <stop offset="100%" stop-color="#06090e"/>
+      <stop offset="0%" stop-color="#141b21"/>
+      <stop offset="100%" stop-color="#0a0e12"/>
     </linearGradient>
 
     <linearGradient id="snakeSpec" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
-      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.10"/>
-      <stop offset="100%" stop-color="#64748b" stop-opacity="0.04"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="50%" stop-color="#ff7a00" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
     </linearGradient>
 
-    <!-- Serpiente en Titanio, Azul Cobalto y Azul Hielo Eléctrico -->
-    <linearGradient id="luxSnakeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.25"/>
-      <stop offset="50%" stop-color="#0284c7"/>
-      <stop offset="85%" stop-color="#00d2ff"/>
-      <stop offset="100%" stop-color="#ffffff"/>
+    <!-- Serpiente en Naranja Institucional UHE -->
+    <linearGradient id="uheSnakeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e2629" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#ff5a1f"/>
+      <stop offset="85%" stop-color="#ff7a00"/>
+      <stop offset="100%" stop-color="#ffa940"/>
     </linearGradient>
 
-    <filter id="luxSnakeGlow" x="-25%" y="-25%" width="150%" height="150%">
+    <filter id="snakeGlow" x="-25%" y="-25%" width="150%" height="150%">
       <feGaussianBlur stdDeviation="3" result="b"/>
       <feMerge>
         <feMergeNode in="b"/>
@@ -27,8 +27,8 @@
       </feMerge>
     </filter>
 
-    <pattern id="luxGrid" width="18" height="18" patternUnits="userSpaceOnUse">
-      <rect x="2" y="2" width="13" height="13" rx="3.5" fill="#0f1520" stroke="#1e293b" stroke-opacity="0.45" stroke-width="0.8"/>
+    <pattern id="realGrid" width="18" height="18" patternUnits="userSpaceOnUse">
+      <rect x="2" y="2" width="13" height="13" rx="3" fill="#141c22" stroke="#1f2830" stroke-opacity="0.5" stroke-width="0.8"/>
     </pattern>
   </defs>
 
@@ -36,101 +36,117 @@
     .ui-sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif; }
     .ui-mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
 
-    .lux-snake-path {
-      stroke-dasharray: 170 1600;
-      stroke-dashoffset: 1770;
-      animation: glideSnake 7s linear infinite;
+    /* La serpiente recorre el tablero cazando las contribuciones de Octubre */
+    .snake-travel {
+      stroke-dasharray: 180 1400;
+      stroke-dashoffset: 1580;
+      animation: huntRealCommits 6.5s linear infinite;
     }
 
-    .gem-1 { animation: gemPulse 7s ease-in-out infinite; }
-    .gem-2 { animation: gemPulse 7s ease-in-out 1.6s infinite; }
-    .gem-3 { animation: gemPulse 7s ease-in-out 3.2s infinite; }
-    .gem-4 { animation: gemPulse 7s ease-in-out 4.8s infinite; }
+    .real-commit-glow {
+      animation: commitBlink 2.2s ease-in-out infinite alternate;
+    }
 
-    @keyframes glideSnake {
-      0% { stroke-dashoffset: 1770; }
+    @keyframes huntRealCommits {
+      0% { stroke-dashoffset: 1580; }
       100% { stroke-dashoffset: 0; }
     }
-    @keyframes gemPulse {
-      0%, 35% { opacity: 1; }
-      45%, 80% { opacity: 0.22; }
-      95%, 100% { opacity: 1; }
+    @keyframes commitBlink {
+      0% { opacity: 0.75; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1.05); }
     }
   </style>
 
   <g transform="translate(4, 4)">
-    <rect width="992" height="216" rx="16" fill="url(#snakeGlass)" stroke="url(#snakeSpec)" stroke-width="1.2"/>
+    <rect width="992" height="222" rx="16" fill="url(#snakeGlass)" stroke="url(#snakeSpec)" stroke-width="1.2"/>
 
-    <text x="36" y="32" class="ui-mono" fill="#64748b" font-size="10" font-weight="600" letter-spacing="1.5">
-      06 // CONTRIBUTION SNAKE • ACTIVIDAD EN GITHUB
+    <!-- Cabecera con datos reales del usuario -->
+    <text x="36" y="32" class="ui-mono" fill="#8c97a0" font-size="10" font-weight="600" letter-spacing="1.5">
+      06 // CONTRIBUTION SNAKE • <tspan fill="#ffffff">17 CONTRIBUCIONES REALES EN EL ÚLTIMO AÑO</tspan>
     </text>
-    <text x="820" y="32" class="ui-mono" fill="#00d2ff" font-size="10" font-weight="600">
+    <text x="820" y="32" class="ui-mono" fill="#ff5a1f" font-size="10" font-weight="600">
       STEWART-ZABALA-TI
     </text>
 
-    <!-- Matriz de Contribuciones (50x7) en Azul Cobalto, Hielo y Acero -->
-    <g transform="translate(46, 46)">
-      <rect x="0" y="0" width="900" height="126" fill="url(#luxGrid)"/>
+    <!-- Meses Reales de tu Calendario de GitHub -->
+    <g transform="translate(46, 48)" class="ui-mono" font-size="9" fill="#8c97a0">
+      <text x="0" y="0">Oct</text>
+      <text x="68" y="0">Nov</text>
+      <text x="142" y="0">Dic</text>
+      <text x="215" y="0">Ene</text>
+      <text x="290" y="0">Feb</text>
+      <text x="365" y="0">Mar</text>
+      <text x="440" y="0">Abr</text>
+      <text x="515" y="0">Puede</text>
+      <text x="590" y="0">Jun</text>
+      <text x="665" y="0">Jul</text>
+      <text x="740" y="0">Ago</text>
+      <text x="815" y="0">Sep</text>
+      <text x="872" y="0" fill="#ff7a00" font-weight="700">Oct</text>
+    </g>
 
+    <!-- Tablero de Contribuciones (50 columnas x 7 filas) -->
+    <g transform="translate(46, 56)">
+      <!-- Celdas vacías del año -->
+      <rect x="0" y="0" width="900" height="126" fill="url(#realGrid)"/>
+
+      <!-- TUS 17 CONTRIBUCIONES REALES (EXACTAS DE TU CAPTURA EN OCTUBRE) -->
       <g transform="translate(2, 2)">
-        <rect x="54" y="18" width="13" height="13" rx="3.5" fill="#172554"/>
-        <rect x="126" y="36" width="13" height="13" rx="3.5" fill="#00d2ff" class="gem-1" filter="url(#luxSnakeGlow)"/>
-        <rect x="198" y="36" width="13" height="13" rx="3.5" fill="#1e3a8a"/>
-        <rect x="270" y="90" width="13" height="13" rx="3.5" fill="#38bdf8" class="gem-2" filter="url(#luxSnakeGlow)"/>
-        <rect x="342" y="18" width="13" height="13" rx="3.5" fill="#0284c7"/>
-        <rect x="432" y="18" width="13" height="13" rx="3.5" fill="#e2e8f0" class="gem-3" filter="url(#luxSnakeGlow)"/>
-        <rect x="504" y="54" width="13" height="13" rx="3.5" fill="#1e3a8a"/>
-        <rect x="576" y="90" width="13" height="13" rx="3.5" fill="#00d2ff" class="gem-2" filter="url(#luxSnakeGlow)"/>
-        <rect x="648" y="36" width="13" height="13" rx="3.5" fill="#0284c7"/>
-        <rect x="720" y="36" width="13" height="13" rx="3.5" fill="#38bdf8" class="gem-4" filter="url(#luxSnakeGlow)"/>
-        <rect x="792" y="72" width="13" height="13" rx="3.5" fill="#0369a1"/>
+        <!-- Columna 48 (Penúltima semana de Octubre) -->
+        <!-- Lunes / Martes (Commit oscuro) -->
+        <rect x="846" y="18" width="13" height="13" rx="3" fill="#0e4429"/>
+        <!-- Viernes (Commit verde brillante Octubre) -->
+        <rect x="846" y="90" width="13" height="13" rx="3" fill="#39d353" class="real-commit-glow" filter="url(#snakeGlow)"/>
 
-        <!-- Contribuciones Recientes -->
-        <rect x="846" y="0" width="13" height="13" rx="3.5" fill="#00d2ff" filter="url(#luxSnakeGlow)"/>
-        <rect x="864" y="0" width="13" height="13" rx="3.5" fill="#38bdf8" filter="url(#luxSnakeGlow)"/>
-        <rect x="882" y="18" width="13" height="13" rx="3.5" fill="#e2e8f0" filter="url(#luxSnakeGlow)"/>
-        <rect x="864" y="108" width="13" height="13" rx="3.5" fill="#00d2ff" filter="url(#luxSnakeGlow)"/>
+        <!-- Columna 49 (Última semana de Octubre) -->
+        <!-- Domingo (Commit verde claro) -->
+        <rect x="864" y="0" width="13" height="13" rx="3" fill="#39d353" class="real-commit-glow" filter="url(#snakeGlow)"/>
+        <!-- Lunes (Commit verde medio) -->
+        <rect x="864" y="18" width="13" height="13" rx="3" fill="#26a641" filter="url(#snakeGlow)"/>
+        <!-- Hoy (Actividad reciente en tus repos) -->
+        <rect x="882" y="18" width="13" height="13" rx="3" fill="#ff5a1f" class="real-commit-glow" filter="url(#snakeGlow)"/>
+        <rect x="882" y="36" width="13" height="13" rx="3" fill="#ffa940" filter="url(#snakeGlow)"/>
       </g>
 
-      <path d="M 8 24 
-               L 134 24 
-               L 134 42 
-               L 278 42 
-               L 278 96 
-               L 350 96 
-               L 350 24 
-               L 440 24 
-               L 440 60 
-               L 584 60 
-               L 584 96 
-               L 656 96 
-               L 656 42 
-               L 728 42 
-               L 728 78 
-               L 854 78 
-               L 854 6 
-               L 892 6" 
+      <!-- Serpiente Naranja UHE recorriendo el tablero directo a tus commits reales -->
+      <path d="M 12 18 
+               L 160 18 
+               L 160 54 
+               L 320 54 
+               L 320 18 
+               L 480 18 
+               L 480 72 
+               L 640 72 
+               L 640 18 
+               L 780 18 
+               L 780 90 
+               L 852 90 
+               L 852 24 
+               L 870 24 
+               L 870 6 
+               L 888 6 
+               L 888 42" 
             fill="none" 
-            stroke="url(#luxSnakeGrad)" 
+            stroke="url(#uheSnakeGrad)" 
             stroke-width="9" 
             stroke-linecap="round" 
             stroke-linejoin="round" 
-            class="lux-snake-path" 
-            filter="url(#luxSnakeGlow)"/>
+            class="snake-travel" 
+            filter="url(#snakeGlow)"/>
     </g>
 
-    <!-- Pie de la Matriz -->
-    <g transform="translate(46, 194)">
-      <text x="0" y="0" class="ui-sans" fill="#64748b" font-size="11">
-        Cada bloque iluminado representa actividad, commits y aprendizaje continuo en GitHub.
+    <!-- Leyenda Inferior con tus datos reales -->
+    <g transform="translate(46, 202)">
+      <text x="0" y="0" class="ui-sans" fill="#cbd5e1" font-size="11">
+        Perfil nuevo: <tspan fill="#ffffff" font-weight="600">17 contribuciones registradas en Octubre</tspan> tras crear los repositorios de TI.
       </text>
-      <text x="728" y="0" class="ui-mono" fill="#64748b" font-size="9.5">MENOS</text>
-      <rect x="772" y="-9" width="10" height="10" rx="2.5" fill="#0f1520" stroke="#1e293b"/>
-      <rect x="786" y="-9" width="10" height="10" rx="2.5" fill="#172554"/>
-      <rect x="800" y="-9" width="10" height="10" rx="2.5" fill="#0284c7"/>
-      <rect x="814" y="-9" width="10" height="10" rx="2.5" fill="#38bdf8"/>
-      <rect x="828" y="-9" width="10" height="10" rx="2.5" fill="#00d2ff"/>
-      <text x="844" y="0" class="ui-mono" fill="#64748b" font-size="9.5">MÁS</text>
+      <text x="735" y="0" class="ui-mono" fill="#8c97a0" font-size="9.5">Menos</text>
+      <rect x="778" y="-9" width="10" height="10" rx="2.5" fill="#141c22" stroke="#1f2830"/>
+      <rect x="792" y="-9" width="10" height="10" rx="2.5" fill="#0e4429"/>
+      <rect x="806" y="-9" width="10" height="10" rx="2.5" fill="#006d32"/>
+      <rect x="820" y="-9" width="10" height="10" rx="2.5" fill="#26a641"/>
+      <rect x="834" y="-9" width="10" height="10" rx="2.5" fill="#39d353"/>
+      <text x="852" y="0" class="ui-mono" fill="#8c97a0" font-size="9.5">Más</text>
     </g>
   </g>
 </svg>
