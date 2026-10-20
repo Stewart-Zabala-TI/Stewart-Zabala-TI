@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 24" width="100%" height="24">
+  <defs>
+    <linearGradient id="pulseCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00f2fe" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="pulseRed" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ff0844" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ff0844" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ffb199" stop-opacity="1"/>
+    </linearGradient>
+    <filter id="divGlow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .laser-right {
+      animation: shootRight 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    .laser-left {
+      animation: shootLeft 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    .center-diamond {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: diamondPulse 1.6s ease-in-out infinite alternate;
+    }
+    @keyframes shootRight {
+      0% { transform: translateX(-220px); opacity: 0; }
+      15% { opacity: 1; }
+      85% { opacity: 1; }
+      100% { transform: translateX(1050px); opacity: 0; }
+    }
+    @keyframes shootLeft {
+      0% { transform: translateX(1050px); opacity: 0; }
+      15% { opacity: 1; }
+      85% { opacity: 1; }
+      100% { transform: translateX(-220px); opacity: 0; }
+    }
+    @keyframes diamondPulse {
+      from { transform: scale(0.85) rotate(45deg); opacity: 0.5; }
+      to { transform: scale(1.2) rotate(45deg); opacity: 1; }
+    }
+  </style>
+
+  <!-- Línea base sutil -->
+  <line x1="20" y1="12" x2="980" y2="12" stroke="#161b22" stroke-width="2"/>
+  <line x1="120" y1="12" x2="880" y2="12" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Paquete de datos Cian corriendo a la derecha -->
+  <rect x="0" y="10.5" width="160" height="3" rx="1.5" fill="url(#pulseCyan)" class="laser-right" filter="url(#divGlow)"/>
+
+  <!-- Paquete de datos Carmesí corriendo a la izquierda -->
+  <rect x="0" y="10.5" width="140" height="3" rx="1.5" fill="url(#pulseRed)" class="laser-left" filter="url(#divGlow)"/>
+
+  <!-- Nodo central de telemetría -->
+  <rect x="495" y="7" width="10" height="10" fill="#0d1117" stroke="#00f2fe" stroke-width="1.8" class="center-diamond" filter="url(#divGlow)"/>
+</svg>

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 135" width="100%" height="100%">
+  <defs>
+    <linearGradient id="projBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="60%" stop-color="#111823"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="cyanBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#ff0844"/>
+    </linearGradient>
+    <filter id="projGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; }
+    .mono { font-family: 'Fira Code', 'JetBrains Mono', 'Consolas', monospace; }
+    .gauge-1 {
+      stroke-dasharray: 95 160;
+      animation: gaugeAnim1 2.4s ease-in-out infinite alternate;
+    }
+    .gauge-2 {
+      stroke-dasharray: 110 160;
+      animation: gaugeAnim2 1.9s ease-in-out infinite alternate;
+    }
+    .live-dot {
+      animation: blinkDot 1.2s ease-in-out infinite;
+    }
+    @keyframes gaugeAnim1 {
+      from { stroke-dasharray: 75 160; }
+      to { stroke-dasharray: 118 160; }
+    }
+    @keyframes gaugeAnim2 {
+      from { stroke-dasharray: 90 160; }
+      to { stroke-dasharray: 128 160; }
+    }
+    @keyframes blinkDot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.25; }
+    }
+  </style>
+
+  <g transform="translate(8, 6)">
+    <rect width="984" height="122" rx="14" fill="url(#projBg)" stroke="#21262d" stroke-width="1.5"/>
+    <rect x="0" y="0" width="984" height="3" rx="1.5" fill="url(#cyanBar)"/>
+
+    <!-- Icono y Título del Proyecto -->
+    <g transform="translate(28, 28)">
+      <rect x="0" y="0" width="44" height="44" rx="10" fill="#161b22" stroke="#00f2fe" stroke-width="1.5"/>
+      <text x="11" y="28" class="mono" fill="#00f2fe" font-size="16" font-weight="700">&gt;_</text>
+
+      <text x="60" y="19" class="sans" fill="#ffffff" font-size="18" font-weight="700">Stewart-Zabala-TI / TI-Metrics</text>
+      <rect x="335" y="4" width="110" height="20" rx="10" fill="#161b22" stroke="#00f2fe" stroke-width="1"/>
+      <circle cx="348" cy="14" r="3.5" fill="#00f2fe" class="live-dot"/>
+      <text x="358" y="18" class="mono" fill="#00f2fe" font-size="9.5" font-weight="700">FEATURED REPO</text>
+
+      <text x="60" y="42" class="sans" fill="#8b949e" font-size="13">Motor de Analítica de Logs y Monitoreo de Infraestructura en tiempo real construido con Python.</text>
+
+      <!-- Etiquetas inferiores -->
+      <circle cx="66" cy="64" r="5" fill="#3572A5"/>
+      <text x="77" y="68" class="mono" fill="#c9d1d9" font-size="11" font-weight="600">Python</text>
+      <text x="140" y="68" class="mono" fill="#58a6ff" font-size="11">#DataAnalytics</text>
+      <text x="255" y="68" class="mono" fill="#00f2fe" font-size="11">#LogMonitoring</text>
+      <text x="372" y="68" class="mono" fill="#ff0844" font-size="11">#Infrastructure</text>
+    </g>
+
+    <!-- Medidores de Telemetría Derecha (Gauges Animados) -->
+    <g transform="translate(735, 62)">
+      <!-- Gauge 1: LOGS/S -->
+      <g transform="translate(0, 0)">
+        <circle cx="0" cy="0" r="28" fill="none" stroke="#161b22" stroke-width="6"/>
+        <circle cx="0" cy="0" r="28" fill="none" stroke="#00f2fe" stroke-width="5" stroke-linecap="round" transform="rotate(-90)" class="gauge-1" filter="url(#projGlow)"/>
+        <text x="-16" y="3" class="mono" fill="#ffffff" font-size="10" font-weight="700">98.4%</text>
+        <text x="-22" y="44" class="mono" fill="#8b949e" font-size="9">ANALYTICS</text>
+      </g>
+
+      <!-- Gauge 2: UPTIME -->
+      <g transform="translate(88, 0)">
+        <circle cx="0" cy="0" r="28" fill="none" stroke="#161b22" stroke-width="6"/>
+        <circle cx="0" cy="0" r="28" fill="none" stroke="#ff0844" stroke-width="5" stroke-linecap="round" transform="rotate(-90)" class="gauge-2" filter="url(#projGlow)"/>
+        <text x="-16" y="3" class="mono" fill="#ffffff" font-size="10" font-weight="700">99.9%</text>
+        <text x="-18" y="44" class="mono" fill="#8b949e" font-size="9">UPTIME</text>
+      </g>
+
+      <!-- Botón Visual Ver Repo -->
+      <g transform="translate(140, -18)">
+        <rect x="0" y="0" width="82" height="36" rx="8" fill="#1f6feb"/>
+        <text x="14" y="22" class="mono" fill="#ffffff" font-size="11" font-weight="700">EXPLORE →</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 90" width="100%" height="90">
+  <defs>
+    <linearGradient id="footGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#1f6feb" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ff0844" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#00f2fe"/>
+      <stop offset="70%" stop-color="#ff0844"/>
+      <stop offset="100%" stop-color="#ff0844" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .mono { font-family: 'Fira Code', 'JetBrains Mono', 'Consolas', monospace; }
+    .wave-anim {
+      animation: waveShift 4s ease-in-out infinite alternate;
+    }
+    @keyframes waveShift {
+      0% { transform: translateX(-25px); }
+      100% { transform: translateX(25px); }
+    }
+  </style>
+
+  <path d="M 0 55 Q 250 20 500 55 T 1000 55 L 1000 90 L 0 90 Z" fill="url(#footGrad)" class="wave-anim"/>
+  <path d="M 0 55 Q 250 20 500 55 T 1000 55" fill="none" stroke="url(#lineGrad)" stroke-width="2" class="wave-anim"/>
+
+  <text x="500" y="32" text-anchor="middle" class="mono" fill="#8b949e" font-size="11" letter-spacing="2">
+    ⚡ <tspan fill="#f0f6fc" font-weight="600">CÓDIGO LIMPIO, DATOS PRECISOS Y SIEMPRE A MÁXIMA VELOCIDAD</tspan> // STEWART-ZABALA-TI
+  </text>
+</svg>
