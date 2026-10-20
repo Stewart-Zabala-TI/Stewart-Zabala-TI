@@ -60,35 +60,25 @@
 </p>
 
 <!-- ===================================================================== -->
-<!-- 07. REDES DE CONTACTO (LISTAS PARA PERSONALIZAR)                      -->
+<!-- 07. REDES DE CONTACTO (ENLACES REALES ACTIVOS)                        -->
 <!-- ===================================================================== -->
 <div align="center">
 
-  <!-- 👇 REEMPLAZA "TU_USUARIO_AQUI" CON TUS ENLACES REALES 👇 -->
   <p align="center">
     <a href="mailto:stewartzabala@gmail.com">
       <img src="https://img.shields.io/badge/Gmail-stewartzabala%40gmail.com-080b11?style=for-the-badge&logo=gmail&logoColor=00d2ff&labelColor=111722" alt="Gmail" />
     </a>
-    <a href="https://www.linkedin.com/in/TU_USUARIO_AQUI">
-      <img src="https://img.shields.io/badge/LinkedIn-Conectar-080b11?style=for-the-badge&logo=linkedin&logoColor=38bdf8&labelColor=111722" alt="LinkedIn" />
+    <a href="https://www.instagram.com/estiguard_z/">
+      <img src="https://img.shields.io/badge/Instagram-%40estiguard__z-080b11?style=for-the-badge&logo=instagram&logoColor=e2e8f0&labelColor=111722" alt="Instagram" />
     </a>
-    <a href="https://www.instagram.com/TU_USUARIO_AQUI">
-      <img src="https://img.shields.io/badge/Instagram-Sígueme-080b11?style=for-the-badge&logo=instagram&logoColor=e2e8f0&labelColor=111722" alt="Instagram" />
+    <a href="https://www.tiktok.com/@estiguard_z">
+      <img src="https://img.shields.io/badge/TikTok-%40estiguard__z-080b11?style=for-the-badge&logo=tiktok&logoColor=00d2ff&labelColor=111722" alt="TikTok" />
     </a>
-    <a href="https://www.facebook.com/TU_USUARIO_AQUI">
-      <img src="https://img.shields.io/badge/Facebook-Perfil-080b11?style=for-the-badge&logo=facebook&logoColor=00d2ff&labelColor=111722" alt="Facebook" />
+    <a href="https://www.facebook.com/jordan.zabala.79/">
+      <img src="https://img.shields.io/badge/Facebook-Jordan%20Zabala-080b11?style=for-the-badge&logo=facebook&logoColor=38bdf8&labelColor=111722" alt="Facebook" />
     </a>
-    <a href="https://wa.me/593TU_NUMERO_AQUI">
-      <img src="https://img.shields.io/badge/WhatsApp-Contacto-080b11?style=for-the-badge&logo=whatsapp&logoColor=38bdf8&labelColor=111722" alt="WhatsApp" />
-    </a>
-    <a href="https://x.com/TU_USUARIO_AQUI">
-      <img src="https://img.shields.io/badge/X-Síguenos-080b11?style=for-the-badge&logo=x&logoColor=f8fafc&labelColor=111722" alt="X" />
-    </a>
-    <a href="https://discord.com/users/TU_ID_AQUI">
-      <img src="https://img.shields.io/badge/Discord-Chat-080b11?style=for-the-badge&logo=discord&logoColor=38bdf8&labelColor=111722" alt="Discord" />
-    </a>
-    <a href="https://www.tiktok.com/@TU_USUARIO_AQUI">
-      <img src="https://img.shields.io/badge/TikTok-Perfil-080b11?style=for-the-badge&logo=tiktok&logoColor=00d2ff&labelColor=111722" alt="TikTok" />
+    <a href="https://wa.me/593996171363">
+      <img src="https://img.shields.io/badge/WhatsApp-0996171363-080b11?style=for-the-badge&logo=whatsapp&logoColor=00d2ff&labelColor=111722" alt="WhatsApp" />
     </a>
   </p>
 
