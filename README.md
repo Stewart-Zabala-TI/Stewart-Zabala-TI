@@ -1,10 +1,10 @@
 <div align="center">
 
   <!-- ===================================================================== -->
-  <!-- 1. ENCABEZADO ANIMADO + HERO SUPERBIKE & TELEMETRÍA IA                -->
+  <!-- 1. ENCABEZADO ANIMADO + HERO SUPERBIKE & TELEMETRÍA IA (DARK TECH)   -->
   <!-- ===================================================================== -->
   <a href="https://github.com/Stewart-Zabala-TI">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=25&duration=3000&pause=900&color=00F2FE&center=true&vCenter=true&width=850&lines=%E2%9A%A1+JORDAN+STEWART+ZABALA+CORREA;CIENCIA+DE+DATOS+E+INTELIGENCIA+ARTIFICIAL+%F0%9F%A7%A0;ARQUITECTURA+Y+DESARROLLO+CON+PYTHON+%F0%9F%90%8D;PRECISI%C3%93N%2C+TELEMETR%C3%8DA+Y+ALTA+VELOCIDAD+%F0%9F%8F%8D%EF%B8%8F" alt="Typing Header" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=25&duration=3000&pause=900&color=00F2FE&center=true&vCenter=true&width=850&lines=%E2%9A%A1+JORDAN+STEWART+ZABALA+CORREA;CIENCIA+DE+DATOS+E+INTELIGENCIA+ARTIFICIAL+%F0%9F%A7%A0;DESARROLLANDO+Y+APRENDIENDO+CON+PYTHON+%F0%9F%90%8D;PRECISI%C3%93N%2C+TELEMETR%C3%8DA+Y+PASION+POR+LAS+MOTOS+%F0%9F%8F%8D%EF%B8%8F" alt="Typing Header" />
   </a>
 
   <!-- ESCENA PRINCIPAL ANIMADA: SUPERBIKE + TACÓMETRO RPM + RED NEURONAL -->
@@ -14,9 +14,9 @@
 
   <!-- INSIGNIAS SUPERIORES DE ESTADO -->
   <p align="center">
-    <img src="https://img.shields.io/badge/ESPECIALIDAD-CIENCIA%20DE%20DATOS%20%26%20IA-0d1117?style=for-the-badge&logo=openai&logoColor=00f2fe&labelColor=161b22" alt="Ciencia de Datos e IA" />
-    <img src="https://img.shields.io/badge/MOTOR%20PRINCIPAL-PYTHON-0d1117?style=for-the-badge&logo=python&logoColor=58a6ff&labelColor=161b22" alt="Python" />
-    <img src="https://img.shields.io/badge/ADN-SUPERBIKES%20%26%20TELEMETRÍA-0d1117?style=for-the-badge&logo=speedtest&logoColor=ff0844&labelColor=161b22" alt="Superbikes" />
+    <img src="https://img.shields.io/badge/ENFOQUE-CIENCIA%20DE%20DATOS%20%26%20IA-0d1117?style=for-the-badge&logo=openai&logoColor=00f2fe&labelColor=161b22" alt="Ciencia de Datos e IA" />
+    <img src="https://img.shields.io/badge/LENGUAJE-PYTHON%20100%25-0d1117?style=for-the-badge&logo=python&logoColor=58a6ff&labelColor=161b22" alt="Python" />
+    <img src="https://img.shields.io/badge/PASIÓN-MOTOS%20%26%20TECNOLOGÍA-0d1117?style=for-the-badge&logo=speedtest&logoColor=ff0844&labelColor=161b22" alt="Motos" />
     <img src="https://komarev.com/ghpvc/?username=Stewart-Zabala-TI&label=VISTAS&color=00f2fe&style=for-the-badge" alt="Vistas del perfil" />
   </p>
 
@@ -40,9 +40,31 @@
 </p>
 
 <!-- ===================================================================== -->
-<!-- 3. PROYECTO DESTACADO (CLICKABLE INTERACTIVE CARD)                    -->
+<!-- 3. LENGUAJE PRINCIPAL & TERMINAL DARK TECH (100% HONEST PYTHON FOCUS) -->
 <!-- ===================================================================== -->
-<h3 align="center">🚀 Proyecto Destacado en Producción</h3>
+<h3 align="center">🐍 Lenguaje Principal &amp; Ruta de Aprendizaje</h3>
+
+<div align="center">
+  <img src="./assets/python-darktech.svg" alt="Terminal Python Dark Tech y Ruta de Aprendizaje" width="100%" />
+</div>
+
+<div align="center">
+  <p align="center">
+    <a href="https://skillicons.dev">
+      <img src="https://skillicons.dev/icons?i=py,vscode,github&theme=dark" alt="Python, VS Code, GitHub" />
+    </a>
+  </p>
+</div>
+
+<!-- SEPARADOR LÁSER ANIMADO -->
+<p align="center">
+  <img src="./assets/divider-pulse.svg" width="100%" alt="Divider" />
+</p>
+
+<!-- ===================================================================== -->
+<!-- 4. PROYECTO DESTACADO (CLICKABLE INTERACTIVE CARD)                    -->
+<!-- ===================================================================== -->
+<h3 align="center">🚀 Proyecto Destacado</h3>
 
 <div align="center">
   <a href="https://github.com/Stewart-Zabala-TI/TI-Metrics">
@@ -56,52 +78,23 @@
 </p>
 
 <!-- ===================================================================== -->
-<!-- 4. ARSENAL TECNOLÓGICO & ECOSISTEMA DE DATOS                          -->
+<!-- 5. LENGUAJE MÁS USADO & MINIJUEGO DE LA SERPIENTE (CONTRIBUCIONES)    -->
 <!-- ===================================================================== -->
-<h3 align="center">🛠️ Lenguaje Principal &amp; Ecosistema de Ciencia de Datos</h3>
+<h3 align="center">📊 Lenguaje Más Usado &amp; Matriz de Contribuciones</h3>
 
 <div align="center">
-
-  <!-- Iconos modernos de alto impacto -->
-  <p align="center">
-    <a href="https://skillicons.dev">
-      <img src="https://skillicons.dev/icons?i=py,git,github,vscode,linux&theme=dark" alt="Tech Icons" />
-    </a>
-  </p>
-
-  <!-- Badges minimalistas de tecnologías y enfoque -->
-  <p align="center">
-    <img src="https://img.shields.io/badge/Python_3-0d1117?style=for-the-badge&logo=python&logoColor=00f2fe" alt="Python" />
-    <img src="https://img.shields.io/badge/Data_Science-0d1117?style=for-the-badge&logo=pandas&logoColor=58a6ff" alt="Data Science" />
-    <img src="https://img.shields.io/badge/Inteligencia_Artificial-0d1117?style=for-the-badge&logo=pytorch&logoColor=ff0844" alt="IA" />
-    <img src="https://img.shields.io/badge/Jupyter-0d1117?style=for-the-badge&logo=jupyter&logoColor=F37626" alt="Jupyter" />
-    <img src="https://img.shields.io/badge/Git_&_GitHub-0d1117?style=for-the-badge&logo=git&logoColor=F05032" alt="Git" />
-    <img src="https://img.shields.io/badge/VS_Code-0d1117?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC" alt="VS Code" />
-  </p>
-
+  <img src="./assets/github-telemetry.svg" alt="Lenguaje Más Usado: Python 100%" width="100%" />
 </div>
 
-<!-- SEPARADOR LÁSER ANIMADO -->
-<p align="center">
-  <img src="./assets/divider-pulse.svg" width="100%" alt="Divider" />
-</p>
-
-<!-- ===================================================================== -->
-<!-- 5. TELEMETRÍA DE GITHUB & LENGUAJE MÁS USADO                          -->
-<!-- ===================================================================== -->
-<h3 align="center">📊 Telemetría de GitHub &amp; Lenguaje Más Usado</h3>
+<br/>
 
 <div align="center">
-  <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Stewart-Zabala-TI&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f2fe&text_color=c9d1d9" alt="Lenguaje más usado" />
-  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=Stewart-Zabala-TI&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f2fe&icon_color=ff0844&text_color=c9d1d9" alt="Estadísticas de GitHub" />
+  <!-- Minijuego de la Serpiente Cyber-Python cazando commits -->
+  <img src="./assets/cyber-snake-contributions.svg" alt="Python Cyber-Snake Contribution Matrix" width="100%" />
 </div>
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=Stewart-Zabala-TI&theme=tokyonight-duo&hide_border=true&background=0D1117&stroke=21262D&ring=00F2FE&fire=FF0844&currStreakLabel=00F2FE&locale=es" alt="Racha de GitHub" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Stewart-Zabala-TI&bg_color=0d1117&color=58a6ff&line=00f2fe&point=ff0844&area=true&hide_border=true" width="98%" alt="Gráfico de actividad en tiempo real" />
 </div>
 
 <!-- SEPARADOR LÁSER ANIMADO -->
